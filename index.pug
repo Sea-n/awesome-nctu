@@ -26,8 +26,7 @@ html(lang="zh-TW")
 			function gtag(){dataLayer.push(arguments);}
 			gtag('js', new Date());
 			gtag('config', 'UA-176833903-1');
-		script(src="/assets/js/index.js")
-	body
+	body(onresize="resize()")
 		header.ts.fluid.vertically.padded.heading.slate
 			.ts.narrow.container
 				h1.ts.header Awesome NCTU
@@ -133,3 +132,4 @@ html(lang="zh-TW")
 					|  |  
 					a(target="_blank" href="https://github.com/Sea-n") 原始碼
 		script(src="https://cdnjs.cloudflare.com/ajax/libs/tocas-ui/2.3.3/tocas.js")
+		script(src="/assets/js/index.js")
