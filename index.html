@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Awesome NCTU</title>
+    <link rel="icon" href="/assets/img/logo.gif" type="image/gif">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="keywords" content="NCTU, 國立交通大學">
+    <meta name="description" content="一個彙整交大相關資源的網站">
+    <link rel="canonical" href="https://nctu.app/">
+    <meta property="og:title" content="Awesome NCTU">
+    <meta property="og:url" content="https://nctu.app/">
+    <meta property="og:image" content="/assets/img/og.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="一個彙整交大相關資源的網站">
+    <meta property="og:site_name" content="Awesome NCTU">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocas-ui/2.3.3/tocas.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-176833903-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-176833903-1');
+    </script>
+    <script src="/assets/js/index.js"></script>
+  </head>
+  <body>
+    <header class="ts fluid vertically padded heading slate">
+      <div class="ts narrow container">
+        <h1 class="ts header">Awesome NCTU</h1>
+        <div class="description">本站主要蒐集由學生製作的非官方工具</div>
+      </div>
+    </header>
+    <div class="ts container" name="main">
+      <h2 class="ts header">模擬排課</h2>
+      <div class="ts cards three" id="timetable">
+        <div class="ts card" id="timetable-uwu">
+          <div class="image"><img class="cover" src="/assets/img/timetable-uwu.jpg" onclick="showImg(this)" style="cursor: zoom-in;"/></div>
+          <div class="content">
+            <div class="header">NCTUwU | 交大選課模擬器</div>
+            <div class="description">由資科工碩 111 級 <a target="_blank" href="https://github.com/splitline">@splitline</a> 開發</div>
+          </div>
+          <div class="right aligned secondary extra content"><a target="_blank" href="https://github.com/splitline/NCTUwU">
+              <button class="ts button">GitHub</button></a> <a target="_blank" href="https://splitline.github.io/NCTUwU/">
+              <button class="ts positive button">立即使用</button></a></div>
+        </div>
+        <div class="ts card" id="timetable-csy">
+          <div class="image"><img class="cover" src="/assets/img/timetable-csy.jpg" onclick="showImg(this)" style="cursor: zoom-in;"/></div>
+          <div class="content">
+            <div class="header">NCTU Timetable⁺</div>
+            <div class="description">由資工系 113 級 <a target="_blank" href="https://github.com/CSY54">@CSY54</a> 開發</div>
+          </div>
+          <div class="right aligned secondary extra content"><a target="_blank" href="https://github.com/CSY54/nctu-timetable-plus">
+              <button class="ts button">GitHub</button></a> <a target="_blank" href="https://timetable.csy54.tw/">
+              <button class="ts positive button">立即使用</button></a></div>
+        </div>
+        <div class="ts card" id="timetable-lys">
+          <div class="image"><img class="cover" src="/assets/img/timetable-lys.jpg" onclick="showImg(this)" style="cursor: zoom-in;"/></div>
+          <div class="content">
+            <div class="header">交大預排課表</div>
+            <div class="description">由資工系 112 級 <a target="_blank" href="https://github.com/lys0829">@lys0829</a> 開發</div>
+          </div>
+          <div class="right aligned secondary extra content"><a target="_blank" href="https://github.com/lys0829/NCTUPreTimetable">
+              <button class="ts button">GitHub</button></a> <a target="_blank" href="https://lys0829.github.io/NCTUPreTimetable/">
+              <button class="ts positive button">立即使用</button></a></div>
+        </div>
+      </div>
+      <h2 class="ts header">其他</h2>
+      <div class="ts cards three" id="other">
+        <div class="ts card" id="other-xnctu">
+          <div class="image"><img class="cover" src="/assets/img/other-xnctu.jpg" onclick="showImg(this)" style="cursor: zoom-in;"/></div>
+          <div class="content">
+            <div class="header">靠北交大 2.0</div>
+            <div class="description">由資工系 112 級 <a target="_blank" href="https://github.com/Sea-n">@Sea-n</a> 開發</div>
+          </div>
+          <div class="right aligned secondary extra content"><a target="_blank" href="https://github.com/Sea-n/xNCTU">
+              <button class="ts button">GitHub</button></a> <a target="_blank" href="https://x.nctu.app/">
+              <button class="ts positive button">立即使用</button></a></div>
+        </div>
+        <div class="ts card" id="other-pastexam">
+          <div class="image"><img class="cover" src="/assets/img/other-pastexam.jpg" onclick="showImg(this)" style="cursor: zoom-in;"/></div>
+          <div class="content">
+            <div class="header">交大資工考古題系統</div>
+            <div class="description">由資工系學會 <a target="_blank" href="https://github.com/NCTUCSUnion">@NCTUCSUnion</a> 開發</div>
+          </div>
+          <div class="right aligned secondary extra content"><a target="_blank" href="https://github.com/NCTUCSUnion/csox">
+              <button class="ts button">GitHub</button></a> <a target="_blank" href="https://pastexam.nctucsunion.me/">
+              <button class="ts positive button">立即使用</button></a></div>
+        </div>
+        <div class="ts card" id="other-cycatz">
+          <div class="image"><img class="cover" src="/assets/img/other-cycatz.jpg" onclick="showImg(this)" style="cursor: zoom-in;"/></div>
+          <div class="content">
+            <div class="header">Awesome NCTU</div>
+            <div class="description">由資工系 112 級 <a target="_blank" href="https://github.com/Cycatz">@Cycatz</a> 整理</div>
+          </div>
+          <div class="right aligned secondary extra content"><a target="_blank" href="https://github.com/Cycatz/awesome-nctu">
+              <button class="ts positive button">GitHub</button></a></div>
+        </div>
+        <div class="ts modals dimmer" id="img-container-wrapper">
+          <dialog class="ts basic fullscreen closable modal" id="modal" open=""><i class="close icon"></i>
+            <div class="ts icon header"></div>
+            <div class="content"><img id="img-container-inner" style="width: 100%;"></div>
+            <div class="actions">
+              <button class="ts inverted basic cancel button">關閉</button>
+            </div>
+          </dialog>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <center>
+        <p>由交大資工 112 級 <a target="_blank" href="https://www.sean.taipei/">Sean 韋詠祥</a> 整理<br><a target="_blank" href="mailto:contact@nctu.app">聯絡信箱</a> |  <a target="_blank" href="https://github.com/Sea-n">原始碼</a></p>
+      </center>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocas-ui/2.3.3/tocas.js"></script>
+  </body>
+</html>

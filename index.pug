@@ -1,0 +1,135 @@
+mixin img(src)
+	div.image
+		img.cover(src=src onclick="showImg(this)" style="cursor: zoom-in;")
+
+doctype html
+html(lang="zh-TW")
+	head
+		meta(http-equiv="Content-Type" content="text/html; charset=utf-8")
+		title Awesome NCTU
+		link(rel="icon" href="/assets/img/logo.gif" type="image/gif")
+		meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
+		meta(name="keywords" content="NCTU, 國立交通大學")
+		meta(name="description" content="一個彙整交大相關資源的網站")
+		link(rel="canonical" href="https://nctu.app/")
+		meta(property="og:title" content="Awesome NCTU")
+		meta(property="og:url" content="https://nctu.app/")
+		meta(property="og:image" content="/assets/img/og.jpg")
+		meta(property="og:type" content="website")
+		meta(property="og:description" content="一個彙整交大相關資源的網站")
+		meta(property="og:site_name" content="Awesome NCTU")
+		link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocas-ui/2.3.3/tocas.css")
+		link(rel="stylesheet" href="/assets/css/style.css")
+		script(async="" src="https://www.googletagmanager.com/gtag/js?id=UA-176833903-1")
+		script.
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-176833903-1');
+		script(src="/assets/js/index.js")
+	body
+		header.ts.fluid.vertically.padded.heading.slate
+			.ts.narrow.container
+				h1.ts.header Awesome NCTU
+				.description 本站主要蒐集由學生製作的非官方工具
+		.ts.container(name="main")
+			h2.ts.header 模擬排課
+			div.ts.cards.three#timetable
+				div.ts.card#timetable-uwu
+					+img("/assets/img/timetable-uwu.jpg")
+					div.content
+						div.header NCTUwU | 交大選課模擬器
+						div.description 由資科工碩 111 級 
+							a(target="_blank" href="https://github.com/splitline") @splitline
+							|  開發
+					.right.aligned.secondary.extra.content
+						a(target="_blank" href="https://github.com/splitline/NCTUwU")
+							button.ts.button GitHub
+						|  
+						a(target="_blank" href="https://splitline.github.io/NCTUwU/")
+							button.ts.positive.button 立即使用
+				div.ts.card#timetable-csy
+					+img("/assets/img/timetable-csy.jpg")
+					div.content
+						div.header NCTU Timetable⁺
+						div.description 由資工系 113 級 
+							a(target="_blank" href="https://github.com/CSY54") @CSY54
+							|  開發
+					.right.aligned.secondary.extra.content
+						a(target="_blank" href="https://github.com/CSY54/nctu-timetable-plus")
+							button.ts.button GitHub
+						|  
+						a(target="_blank" href="https://timetable.csy54.tw/")
+							button.ts.positive.button 立即使用
+				div.ts.card#timetable-lys
+					+img("/assets/img/timetable-lys.jpg")
+					div.content
+						div.header 交大預排課表
+						div.description 由資工系 112 級 
+							a(target="_blank" href="https://github.com/lys0829") @lys0829
+							|  開發
+					.right.aligned.secondary.extra.content
+						a(target="_blank" href="https://github.com/lys0829/NCTUPreTimetable")
+							button.ts.button GitHub
+						|  
+						a(target="_blank" href="https://lys0829.github.io/NCTUPreTimetable/")
+							button.ts.positive.button 立即使用
+			h2.ts.header 其他
+			div.ts.cards.three#other
+				div.ts.card#other-xnctu
+					+img("/assets/img/other-xnctu.jpg")
+					div.content
+						div.header 靠北交大 2.0
+						div.description 由資工系 112 級 
+							a(target="_blank" href="https://github.com/Sea-n") @Sea-n
+							|  開發
+					.right.aligned.secondary.extra.content
+						a(target="_blank" href="https://github.com/Sea-n/xNCTU")
+							button.ts.button GitHub
+						|  
+						a(target="_blank" href="https://x.nctu.app/")
+							button.ts.positive.button 立即使用
+				div.ts.card#other-pastexam
+					+img("/assets/img/other-pastexam.jpg")
+					div.content
+						div.header 交大資工考古題系統
+						div.description 由資工系學會 
+							a(target="_blank" href="https://github.com/NCTUCSUnion") @NCTUCSUnion
+							|  開發
+					.right.aligned.secondary.extra.content
+						a(target="_blank" href="https://github.com/NCTUCSUnion/csox")
+							button.ts.button GitHub
+						|  
+						a(target="_blank" href="https://pastexam.nctucsunion.me/")
+							button.ts.positive.button 立即使用
+				div.ts.card#other-cycatz
+					+img("/assets/img/other-cycatz.jpg")
+					div.content
+						div.header Awesome NCTU
+						div.description 由資工系 112 級 
+							a(target="_blank" href="https://github.com/Cycatz") @Cycatz
+							|  整理
+					.right.aligned.secondary.extra.content
+						a(target="_blank" href="https://github.com/Cycatz/awesome-nctu")
+							button.ts.positive.button GitHub
+
+				#img-container-wrapper.ts.modals.dimmer
+					dialog#modal.ts.basic.fullscreen.closable.modal(open='')
+						i.close.icon
+						.ts.icon.header
+						.content
+							img#img-container-inner(style='width: 100%;')
+						.actions
+							button.ts.inverted.basic.cancel.button 關閉
+
+		footer
+			center
+				p
+					| 由交大資工 112 級 
+					a(target="_blank" href="https://www.sean.taipei/") Sean 韋詠祥
+					|  整理
+					br
+					a(target="_blank" href="mailto:contact@nctu.app") 聯絡信箱
+					|  |  
+					a(target="_blank" href="https://github.com/Sea-n") 原始碼
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/tocas-ui/2.3.3/tocas.js")
