@@ -11,10 +11,10 @@ html(lang="zh-TW")
 		meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
 		meta(name="keywords" content="NCTU, 國立交通大學")
 		meta(name="description" content="一個彙整交大相關資源的網站")
-		link(rel="canonical" href="https://nctu.app/")
+		link(rel="canonical" href="https://awesome.nctu.app/")
 		meta(property="og:title" content="Awesome NCTU")
-		meta(property="og:url" content="https://nctu.app/")
-		meta(property="og:image" content="/assets/img/og.jpg")
+		meta(property="og:url" content="https://awesome.nctu.app/")
+		meta(property="og:image" content="/assets/img/other-awesome.jpg")
 		meta(property="og:type" content="website")
 		meta(property="og:description" content="一個彙整交大相關資源的網站")
 		meta(property="og:site_name" content="Awesome NCTU")
@@ -85,6 +85,19 @@ html(lang="zh-TW")
 							button.ts.button GitHub
 						|  
 						a(target="_blank" href="https://course.nctu.xyz/")
+							button.ts.positive.button 立即使用
+				div.ts.card#timetable-solrz
+					+img("/assets/img/timetable-solrz.jpg")
+					div.content
+						div.header n-course-to-u
+						div.description 由資工系 110 級 
+							a(target="_blank" href="https://github.com/solrz") @solrz
+							|  開發
+					.right.aligned.secondary.extra.content
+						a(target="_blank" href="https://github.com/solrz/nice-course-to-u")
+							button.ts.button GitHub
+						|  
+						a(target="_blank" href="https://solrz.github.io/nice-course-to-u/")
 							button.ts.positive.button 立即使用
 			h2.ts.header 其他
 			div.ts.cards.three#other
